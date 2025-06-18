@@ -5,7 +5,7 @@ import ProductDetails from './ProductDetails';
 import { Col, Container, Row } from 'react-bootstrap';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useNavigate, useNavigation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 function App() {
 
