@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ProductDetails() {
+export default function ProductDetails({finalProducts}) {
     return (
         <div>
             {finalProducts.map((value, index) => {

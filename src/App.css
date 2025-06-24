@@ -28,22 +28,41 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.mainDiv{
+.mainDiv {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.secondDiv{
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
+/* .secondDiv{
+} */
+
+.productItemShadow {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0.1);
+  width: 100%;
+  height: 100%;
 }
-.productItemShadow{
-  width: 250px;
-  height: auto;
+
+.productTitle {
+  font-size: 23px;
 }
+
+@media (max-width: 576px) {
+  .productItemShadow {
+    width: 100%;
+    height: 100%;
+  }
+  .productTitle {
+    font-size: 14px;
+  }
+}
+
+.productImages {
+    width: 100%;
+  }

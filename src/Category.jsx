@@ -5,15 +5,15 @@ export default function Category({ finalCategory,setCategoryName }) {
   let allCategory = finalCategory.map((value, index) => {
     return (
       <div key={index}>
-        <li onClick={() => setCategoryName(value.name)}>{value.name}</li>
+        <li className='showCategories text-lg-center' onClick={() => setCategoryName(value.name)}>{value.name}</li>
       </div>
     )
   })
   return (
     <div>
-      <h3 className='fw-normal p-1 ps-5 mb-5'>Products Category</h3>
+      <h3 className='categoryHeading'>Products Category</h3>
 
-      <ul>
+      <ul className='ps-1 ps-lg-3'>
         {allCategory}
       </ul>
     </div>
