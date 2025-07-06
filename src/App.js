@@ -10,7 +10,7 @@ function App() {
 
   let [finalCategory, setFinalCategory] = useState([]);
   let [finalProducts, setFinalProducts] = useState([]);
-  let [categoryName, setCategoryName] = useState('');
+  let [categoryName, setCategoryName] = useState(null);
 
   let getCategory = () => {
     axios.get('https://dummyjson.com/products/categories')
@@ -27,6 +27,7 @@ function App() {
         setFinalProducts(finalRes.products);
       })
   }
+
   useEffect(() => {
     getCategory();
     getProducts();
