@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Category from './Category';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 function App() {
 
@@ -72,11 +70,10 @@ function App() {
 export default App;
 
 let ProductItems = ({ pData }) => {
-  const navigate = useNavigate()
   return (
     <Col lg={4} sm={6} xs={6} className='mt-5'>
       <div className='productItemShadow text-center pb-4'>
-        <img className='productImages' src={pData.thumbnail} />
+        <img className='productImages' src={pData.thumbnail} alt={pData.title || "product image"}/>
         <h4 className='productTitle'>{pData.title}</h4>
         <b>$ {pData.price}</b>
       </div>
